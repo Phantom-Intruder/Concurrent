@@ -5,9 +5,9 @@ import java.util.Random;
 public class PaperTechnician extends Thread{
 
     private String technicianName;
-    private LaserPrinter printer;
+    private ServicePrinter printer;
 
-    public PaperTechnician(ThreadGroup threadGroup, String threadName, String technicianName, LaserPrinter printer){
+    public PaperTechnician(ThreadGroup threadGroup, String threadName, String technicianName, ServicePrinter printer){
         super(threadGroup, threadName);
         this.technicianName = technicianName;
         this.printer = printer;

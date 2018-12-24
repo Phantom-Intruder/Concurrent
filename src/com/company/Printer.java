@@ -1,4 +1,6 @@
 package com.company;
 
-public class Printer {
+public interface Printer {
+    public String toString();
+    public void printDocument(Document document) ;
 }

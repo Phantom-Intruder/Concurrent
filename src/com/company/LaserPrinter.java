@@ -11,8 +11,12 @@ public class LaserPrinter implements ServicePrinter {
     //endregion
 
     //region Constructor
-    public LaserPrinter(){
-
+    public LaserPrinter(String printerName, int printerID, int printerPaperLevel, int tonerLevel, int documentsPrinted){
+        this.printerName = printerName;
+        this.printerID = printerID;
+        this.printerPaperLevel = printerPaperLevel;
+        this.tonerLevel = tonerLevel;
+        this.documentsPrinted = documentsPrinted;
     }
     //endregion
 
