@@ -1,6 +1,6 @@
 package com.company;
 
-public interface ServicePrinter {
-    public void refillPaper();
-    public void replaceTonerCartridge();
+public interface ServicePrinter extends Printer{
+    void refillPaper();
+    void replaceTonerCartridge();
 }

@@ -5,10 +5,12 @@ import java.util.Random;
 public class TonerTechnician extends Thread{
 
     private String technicianName;
-    private ServicePrinter printer;
+    private LaserPrinter printer;
+    private ThreadGroup threadGroup;
 
-    public TonerTechnician(ThreadGroup threadGroup, String threadName, String technicianName, ServicePrinter printer){
+    TonerTechnician(ThreadGroup threadGroup, String threadName, String technicianName, LaserPrinter printer){
         super(threadGroup, threadName);
+        this.threadGroup = threadGroup;
         this.technicianName = technicianName;
         this.printer = printer;
     }
@@ -27,6 +29,6 @@ public class TonerTechnician extends Thread{
             }
         }
 
-        System.out.println("Technician "+ technicianName + "has finished replacing cartridge");
+        System.out.println("Technician "+ technicianName + " has finished.");
     }
 }

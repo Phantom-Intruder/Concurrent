@@ -1,6 +1,6 @@
 package com.company;
 
-public class LaserPrinter implements ServicePrinter {
+public class LaserPrinter implements ServicePrinter{
 
     //region Members
     private String printerName;
@@ -8,71 +8,32 @@ public class LaserPrinter implements ServicePrinter {
     private int printerPaperLevel;
     private int tonerLevel;
     private int documentsPrinted;
+    private ThreadGroup studentGroup;
     //endregion
 
     //region Constructor
-    public LaserPrinter(String printerName, int printerID, int printerPaperLevel, int tonerLevel, int documentsPrinted){
+    LaserPrinter(String printerName, int printerID, int printerPaperLevel, int tonerLevel, int documentsPrinted, ThreadGroup studentGroup){
         this.printerName = printerName;
         this.printerID = printerID;
         this.printerPaperLevel = printerPaperLevel;
         this.tonerLevel = tonerLevel;
         this.documentsPrinted = documentsPrinted;
-    }
-    //endregion
-
-    //region Properties
-    public String getPrinterName() {
-        return printerName;
-    }
-
-    public void setPrinterName(String printerName) {
-        this.printerName = printerName;
-    }
-
-    public int getPrinterID() {
-        return printerID;
-    }
-
-    public void setPrinterID(int printerID) {
-        this.printerID = printerID;
-    }
-
-    public int getPrinterPaperLevel() {
-        return printerPaperLevel;
-    }
-
-    public void setPrinterPaperLevel(int printerPaperLevel) {
-        this.printerPaperLevel = printerPaperLevel;
-    }
-
-    public int getTonerLevel() {
-        return tonerLevel;
-    }
-
-    public void setTonerLevel(int tonerLevel) {
-        this.tonerLevel = tonerLevel;
-    }
-
-    public int getDocumentsPrinted() {
-        return documentsPrinted;
-    }
-
-    public void setDocumentsPrinted(int documentsPrinted) {
-        this.documentsPrinted = documentsPrinted;
+        this.studentGroup = studentGroup;
     }
     //endregion
 
     //region Class methods
     @Override
     public String toString() {
-        return "[ PrinterID: " + printerID +
+        return "[ PrinterID: " + printerID + printerName +
                 ", Paper Level: " + printerPaperLevel +
                 ". Toner Level: " + tonerLevel +
-                "Documents Printed: " + documentsPrinted ;
+                ". Documents Printed: " + documentsPrinted +
+                " ]";
     }
 
     public synchronized void printDocument(Document document){
-        while ((document.getDocumentPages() < printerPaperLevel) || (document.getDocumentPages() < tonerLevel)){
+        while ((printerPaperLevel < document.getDocumentPages()) || (tonerLevel < document.getDocumentPages())){
             System.out.println("Not enough resources");
             try {
                 wait();
@@ -85,37 +46,45 @@ public class LaserPrinter implements ServicePrinter {
         printerPaperLevel = printerPaperLevel - document.getDocumentPages();
         tonerLevel = tonerLevel - document.getDocumentPages();
 
-        System.out.println("Document printed");
+        System.out.println("Document " + document.getDocumentName() + " printed for student " + document.getStudentName() + ". Document number " + documentsPrinted);
 
         notifyAll();
     }
 
     public synchronized void refillPaper() {
-        while (printerPaperLevel > 200) {
-            System.out.println("Paper full");
+        while (printerPaperLevel > 200 && studentGroup.activeCount() > 0) {
+            System.out.println("Paper not replaced, paper level: " + printerPaperLevel);
             try {
                 wait(5000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
-        printerPaperLevel = printerPaperLevel + 50;
+
+        if (studentGroup.activeCount() > 0){
+            System.out.println("Printer paper level: " + printerPaperLevel + ". Student count " + studentGroup.activeCount() + ". Paper replaced");
+            printerPaperLevel = printerPaperLevel + 50;
+        }
 
         notifyAll();
     }
 
     public synchronized void replaceTonerCartridge(){
-        while (tonerLevel > 10) {
-            System.out.println("Toner full");
+        while (tonerLevel > 10 && studentGroup.activeCount() > 0) {
+            System.out.println("Toner not replaced. Toner level: " + tonerLevel);
             try {
                 wait(5000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
-        tonerLevel = 500;
+        if (studentGroup.activeCount() > 0) {
+            System.out.println("Printer toner level: " + tonerLevel + ". Student count " + studentGroup.activeCount() + ". Toner replaced");
+            tonerLevel = 500;
+        }
 
         notifyAll();
     }
     //endregion
+
 }
