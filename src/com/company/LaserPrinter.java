@@ -33,7 +33,7 @@ public class LaserPrinter implements ServicePrinter{
     }
 
     public synchronized void printDocument(Document document){
-        while ((printerPaperLevel < document.getDocumentPages()) || (tonerLevel < document.getDocumentPages())){
+        while ((printerPaperLevel < document.getNumberOfPages()) || (tonerLevel < document.getNumberOfPages())){
             System.out.println("Not enough resources");
             try {
                 wait();
@@ -43,10 +43,10 @@ public class LaserPrinter implements ServicePrinter{
         }
 
         documentsPrinted++;
-        printerPaperLevel = printerPaperLevel - document.getDocumentPages();
-        tonerLevel = tonerLevel - document.getDocumentPages();
+        printerPaperLevel = printerPaperLevel - document.getNumberOfPages();
+        tonerLevel = tonerLevel - document.getNumberOfPages();
 
-        System.out.println("Document " + document.getDocumentName() + " printed for student " + document.getStudentName() + ". Document number " + documentsPrinted);
+        System.out.println("Document " + document.getDocumentName() + " printed for student " + document.getUserID() + ". Document number " + documentsPrinted);
 
         notifyAll();
     }

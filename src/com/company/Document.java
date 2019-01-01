@@ -1,33 +1,45 @@
 package com.company;
 
-class Document {
+/** *********************************************************************
+ * File:	  Document.java	(Class)
+ * Author:	  P. Howells
+ * Contents:  6SENG002W CWK
+ *		      This provides an "abstract" document object.
+ *		      It includes the user id, the document's name & its length
+ *		      in pages.
+ * Date:      26/10/18
+ * Version:	  1.0
+ ************************************************************************ */
 
-    //region Members
-    private String studentName;
-    private String documentName;
-    private int documentPages;
-    //endregion
+class Document
+{
+    private final String userID ;
+    private final String documentName ;
+    private final int    numberOfPages ;
 
-    //region Constructor
-    Document(String studentName, String documentName, int documentPages){
-        this.studentName = studentName;
-        this.documentName = documentName;
-        this.documentPages = documentPages;
+
+    public Document( String UID, String name, int length )
+    {
+        this.userID        = UID ;
+        this.documentName  = name ;
+        this.numberOfPages = length ;
     }
-    //endregion
 
-    //region Class methods
-    int getDocumentPages() {
-        return documentPages;
+
+    public String getUserID( )        { return userID ; }
+
+    public String getDocumentName( )  { return documentName ; }
+
+    public int    getNumberOfPages( ) { return numberOfPages ; }
+
+
+    public String toString( )
+    {
+        return new String( "Document[ "  +
+                "UserID: " + userID        + ", " +
+                "Name: "   + documentName  + ", " +
+                "Pages: "  + numberOfPages +
+                "]"  ) ;
     }
 
-    String getStudentName() {
-        return studentName;
-    }
-
-    String getDocumentName() {
-        return documentName;
-    }
-    //endregion
-
-}
+} // Document
