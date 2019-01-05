@@ -12,11 +12,11 @@ public class LaserPrinter implements ServicePrinter{
     //endregion
 
     //region Constructor
-    LaserPrinter(String printerName, int printerID, int printerPaperLevel, int tonerLevel, int documentsPrinted, ThreadGroup studentGroup){
+    LaserPrinter(String printerName, int printerID, int documentsPrinted, ThreadGroup studentGroup){
         this.printerName = printerName;
         this.printerID = printerID;
-        this.printerPaperLevel = printerPaperLevel;
-        this.tonerLevel = tonerLevel;
+        this.printerPaperLevel = Full_Paper_Tray;
+        this.tonerLevel = Full_Toner_Level;
         this.documentsPrinted = documentsPrinted;
         this.studentGroup = studentGroup;
     }
@@ -63,14 +63,14 @@ public class LaserPrinter implements ServicePrinter{
 
         if (studentGroup.activeCount() > 0){
             System.out.println("Printer paper level: " + printerPaperLevel + ". Student count " + studentGroup.activeCount() + ". Paper replaced");
-            printerPaperLevel = printerPaperLevel + 50;
+            printerPaperLevel = printerPaperLevel + SheetsPerPack;
         }
 
         notifyAll();
     }
 
     public synchronized void replaceTonerCartridge(){
-        while (tonerLevel > 10 && studentGroup.activeCount() > 0) {
+        while (tonerLevel > Minimum_Toner_Level && studentGroup.activeCount() > 0) {
             System.out.println("Toner not replaced. Toner level: " + tonerLevel);
             try {
                 wait(5000);
@@ -80,7 +80,7 @@ public class LaserPrinter implements ServicePrinter{
         }
         if (studentGroup.activeCount() > 0) {
             System.out.println("Printer toner level: " + tonerLevel + ". Student count " + studentGroup.activeCount() + ". Toner replaced");
-            tonerLevel = 500;
+            tonerLevel = PagesPerTonerCartridge;
         }
 
         notifyAll();

@@ -3,13 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="504c14ba-fec1-445d-beed-4f55fe22537f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Coursework/com/company/Document.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Coursework/com/company/Document.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Coursework/com/company/PaperTechnician.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Coursework/com/company/PaperTechnician.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Coursework/com/company/TonerTechnician.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Coursework/com/company/TonerTechnician.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Document.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Document.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/LaserPrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/LaserPrinter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Printer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Printer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/ServicePrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/ServicePrinter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/PrintingSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/PrintingSystem.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,53 +13,72 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/src/com/company/ServicePrinter.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="231">
+                    <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-1436549010">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.15" value="1" />
-          <entry key="project.open.time.23" value="2" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.23" value="3" />
           <entry key="project.open.time.40" value="1" />
           <entry key="project.open.time.41" value="1" />
           <entry key="project.open.time.43" value="1" />
           <entry key="project.open.time.46" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="24" />
+          <entry key="java" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="24" />
+          <entry key="JAVA" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="3802" />
+          <entry key="java" value="3823" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3802" />
+          <entry key="JAVA" value="3823" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/LaserPrinter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-134">
-              <caret line="48" column="116" selection-start-line="48" selection-start-column="116" selection-end-line="48" selection-end-column="116" />
+            <state relative-caret-position="798">
+              <caret line="87" column="15" lean-forward="true" selection-start-line="87" selection-start-column="15" selection-end-line="87" selection-end-column="15" />
               <folding>
                 <element signature="n#!!doc;n#printerName#0;n#LaserPrinter#0" />
-                <element signature="n#!!doc;n#LaserPrinter#0;n#LaserPrinter#0" />
               </folding>
             </state>
           </provider>
@@ -73,12 +87,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/TonerTechnician.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="39" selection-start-line="39" selection-end-line="39" />
+            <state relative-caret-position="210">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="n#!!doc;n#technicianName#0;n#TonerTechnician#0" />
                 <element signature="n#!!doc;n#TonerTechnician#0;n#TonerTechnician#0" />
-                <element signature="n#!!doc;n#run#0;n#TonerTechnician#0" />
               </folding>
             </state>
           </provider>
@@ -87,12 +100,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/PaperTechnician.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            <state relative-caret-position="412">
+              <caret line="24" column="31" lean-forward="true" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
               <folding>
                 <element signature="n#!!doc;n#technicianName#0;n#PaperTechnician#0" />
-                <element signature="n#!!doc;n#PaperTechnician#0;n#PaperTechnician#0" />
-                <element signature="n#!!doc;n#run#0;n#PaperTechnician#0" />
               </folding>
             </state>
           </provider>
@@ -101,38 +112,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Student.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+            <state relative-caret-position="126">
+              <caret line="10" column="15" lean-forward="true" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
               <folding>
                 <element signature="n#!!doc;n#studentName#0;n#Student#0" />
                 <element signature="n#!!doc;n#Student#0;n#Student#0" />
-                <element signature="n#!!doc;n#run#0;n#Student#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/PrintingSystem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="60" column="8" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
-              <folding>
-                <element signature="e#107#128#0" />
-                <element signature="e#379#395#0" />
-                <element signature="e#661#678#0" />
-                <element signature="e#1379#1399#0" />
-                <element signature="e#1865#1890#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Document.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="798">
-              <caret line="38" column="31" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
+            <state relative-caret-position="202">
+              <caret line="60" column="25" lean-forward="true" selection-start-line="60" selection-start-column="25" selection-end-line="60" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -140,17 +134,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Printer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/ServicePrinter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
-              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+            <state relative-caret-position="273">
+              <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -172,13 +157,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/com/company/Main.java" />
-        <option value="$PROJECT_DIR$/src/com/company/PrintingSystem.java" />
         <option value="$PROJECT_DIR$/src/com/company/PaperTechnician.java" />
         <option value="$PROJECT_DIR$/src/com/company/Student.java" />
         <option value="$PROJECT_DIR$/src/com/company/TonerTechnician.java" />
         <option value="$PROJECT_DIR$/src/com/company/Document.java" />
         <option value="$PROJECT_DIR$/src/com/company/Printer.java" />
         <option value="$PROJECT_DIR$/src/com/company/ServicePrinter.java" />
+        <option value="$PROJECT_DIR$/src/com/company/PrintingSystem.java" />
         <option value="$PROJECT_DIR$/src/com/company/LaserPrinter.java" />
       </list>
     </option>
@@ -190,8 +175,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -203,6 +187,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -225,14 +210,14 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545733776640" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546664925883" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Lynda - Up and Running with Backbone.js 2014/Exercise Files/01/01-03" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunDashboard">
@@ -281,18 +266,19 @@
       <workItem from="1545710071252" duration="14137000" />
       <workItem from="1545732039492" duration="1784000" />
       <workItem from="1545990327150" duration="2744000" />
-      <workItem from="1546337384216" duration="183000" />
+      <workItem from="1546337384216" duration="531000" />
+      <workItem from="1546348934064" duration="94000" />
+      <workItem from="1546663825576" duration="1173000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33693000" />
+    <option name="totallyTimeSpent" value="35308000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12953092" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13166311" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -300,8 +286,8 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.31019524" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32968238" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.52277654" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4030668" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -361,70 +347,6 @@
     <entry file="file://$USER_HOME$/Downloads/drive-download-20181201T163827Z-001/Printer.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/TonerTechnician.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-          <folding>
-            <element signature="n#!!doc;n#technicianName#0;n#TonerTechnician#0" />
-            <element signature="n#!!doc;n#TonerTechnician#0;n#TonerTechnician#0" />
-            <element signature="n#!!doc;n#run#0;n#TonerTechnician#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/PaperTechnician.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding>
-            <element signature="n#!!doc;n#technicianName#0;n#PaperTechnician#0" />
-            <element signature="n#!!doc;n#PaperTechnician#0;n#PaperTechnician#0" />
-            <element signature="n#!!doc;n#run#0;n#PaperTechnician#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
-          <folding>
-            <element signature="n#!!doc;n#studentName#0;n#Student#0" />
-            <element signature="n#!!doc;n#Student#0;n#Student#0" />
-            <element signature="n#!!doc;n#run#0;n#Student#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/PrintingSystem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="60" column="8" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
-          <folding>
-            <element signature="e#107#128#0" />
-            <element signature="e#379#395#0" />
-            <element signature="e#661#678#0" />
-            <element signature="e#1379#1399#0" />
-            <element signature="e#1865#1890#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Printer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/ServicePrinter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Document.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="798">
@@ -434,12 +356,64 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/LaserPrinter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-134">
-          <caret line="48" column="116" selection-start-line="48" selection-start-column="116" selection-end-line="48" selection-end-column="116" />
+        <state relative-caret-position="798">
+          <caret line="87" column="15" lean-forward="true" selection-start-line="87" selection-start-column="15" selection-end-line="87" selection-end-column="15" />
           <folding>
             <element signature="n#!!doc;n#printerName#0;n#LaserPrinter#0" />
-            <element signature="n#!!doc;n#LaserPrinter#0;n#LaserPrinter#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/PaperTechnician.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="24" column="31" lean-forward="true" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+          <folding>
+            <element signature="n#!!doc;n#technicianName#0;n#PaperTechnician#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/TonerTechnician.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="n#!!doc;n#technicianName#0;n#TonerTechnician#0" />
+            <element signature="n#!!doc;n#TonerTechnician#0;n#TonerTechnician#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="10" column="15" lean-forward="true" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+          <folding>
+            <element signature="n#!!doc;n#studentName#0;n#Student#0" />
+            <element signature="n#!!doc;n#Student#0;n#Student#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/ServicePrinter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Printer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/PrintingSystem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="60" column="25" lean-forward="true" selection-start-line="60" selection-start-column="25" selection-end-line="60" selection-end-column="25" />
         </state>
       </provider>
     </entry>

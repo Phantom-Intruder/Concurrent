@@ -13,8 +13,6 @@ public class PrintingSystem {
         //region Printer
         LaserPrinter laserPrinter = new LaserPrinter("printer1",
                 1,
-                250,
-                500,
                 0,
                 studentThreadGroup);
         System.out.println("Printer object created");
